@@ -6,6 +6,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\IZCommerce.Common\IZCommerce.Common.csproj" />
+    <ProjectReference Include="..\IZCommerce.Core\IZCommerce.Core.csproj" />
     <ProjectReference Include="..\IZCommerce.Infrastructure\IZCommerce.Infrastructure.csproj" />
     <ProjectReference Include="..\IZCommerce.Logging\IZCommerce.Logging.csproj" />
   </ItemGroup>

@@ -11,9 +11,6 @@ namespace IZCommerce.Core.Models
         [MaxLength(50)]
         public string SKU { get; set; }
 
-        [MaxLength(50)]
-        public string SupplierProductID { get; set; }
-        
         [Required]
         [MaxLength(100)]
         public string ProductName { get; set; }
@@ -21,10 +18,6 @@ namespace IZCommerce.Core.Models
         [Required]
         [MaxLength(100)]
         public string ProductDescription { get; set; }
-        
-        public int SupplierID { get; set; }
-        
-        public int CategoryID { get; set; }
         
         public int QuantityPerUnit { get; set; }
 
@@ -69,10 +62,12 @@ namespace IZCommerce.Core.Models
 
         [ForeignKey(nameof(Supplier))]
         public int SupplierId { get; set; }
+        
         public Supplier Supplier { get; set; }
 
         [ForeignKey(nameof(Category))]
         public int CategoryId { get; set; }
+        
         public Category Category { get; set; }
     }
 }

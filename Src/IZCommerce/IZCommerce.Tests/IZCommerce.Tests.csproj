@@ -13,4 +13,11 @@
     <PackageReference Include="coverlet.collector" Version="3.0.2" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\IZCommerce.API\IZCommerce.API.csproj" />
+    <ProjectReference Include="..\IZCommerce.Common\IZCommerce.Common.csproj" />
+    <ProjectReference Include="..\IZCommerce.Infrastructure\IZCommerce.Infrastructure.csproj" />
+    <ProjectReference Include="..\IZCommerce.Logging\IZCommerce.Logging.csproj" />
+  </ItemGroup>
+
 </Project>

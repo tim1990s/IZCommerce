@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Infrastructure.Common
+namespace IZCommerce.Common
 {
     public class Class1
     {

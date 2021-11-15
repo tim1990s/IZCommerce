@@ -3,15 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31727.386
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IZCommerce.Tests", "IZCommerce.Tests\IZCommerce.Tests.csproj", "{5D2EF0FC-C097-4988-B092-3BCDAC7087F0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IZCommerce.Tests", "IZCommerce.Tests\IZCommerce.Tests.csproj", "{5D2EF0FC-C097-4988-B092-3BCDAC7087F0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IZCommerce.Logging", "IZCommerce.Logging\IZCommerce.Logging.csproj", "{8B20D60F-3498-492C-BE6D-9AB5C665EF76}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IZCommerce.Logging", "IZCommerce.Logging\IZCommerce.Logging.csproj", "{8B20D60F-3498-492C-BE6D-9AB5C665EF76}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IZCommerce.Infrastructure", "IZCommerce.Infrastructure\IZCommerce.Infrastructure.csproj", "{F4AF09D0-654D-4A4A-98E5-3696F87B2753}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IZCommerce.Infrastructure", "IZCommerce.Infrastructure\IZCommerce.Infrastructure.csproj", "{F4AF09D0-654D-4A4A-98E5-3696F87B2753}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure.API", "Infrastructure.API\Infrastructure.API.csproj", "{D83D01CB-E159-4991-890C-8944C255665F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IZCommerce.API", "IZCommerce.API\IZCommerce.API.csproj", "{56065DE2-F657-4D41-A88C-B4E305DD37E5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure.Common", "Infrastructure.Common\Infrastructure.Common.csproj", "{66245552-ED5F-4056-86E2-59F09A28B184}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IZCommerce.Common", "IZCommerce.Common\IZCommerce.Common.csproj", "{C2D32240-7785-4950-92E0-7A908A6C6B4F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,14 +31,14 @@ Global
 		{F4AF09D0-654D-4A4A-98E5-3696F87B2753}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F4AF09D0-654D-4A4A-98E5-3696F87B2753}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F4AF09D0-654D-4A4A-98E5-3696F87B2753}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D83D01CB-E159-4991-890C-8944C255665F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D83D01CB-E159-4991-890C-8944C255665F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D83D01CB-E159-4991-890C-8944C255665F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D83D01CB-E159-4991-890C-8944C255665F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{66245552-ED5F-4056-86E2-59F09A28B184}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{66245552-ED5F-4056-86E2-59F09A28B184}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{66245552-ED5F-4056-86E2-59F09A28B184}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{66245552-ED5F-4056-86E2-59F09A28B184}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56065DE2-F657-4D41-A88C-B4E305DD37E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56065DE2-F657-4D41-A88C-B4E305DD37E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56065DE2-F657-4D41-A88C-B4E305DD37E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56065DE2-F657-4D41-A88C-B4E305DD37E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2D32240-7785-4950-92E0-7A908A6C6B4F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2D32240-7785-4950-92E0-7A908A6C6B4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2D32240-7785-4950-92E0-7A908A6C6B4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2D32240-7785-4950-92E0-7A908A6C6B4F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

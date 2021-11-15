@@ -1,6 +1,6 @@
 using System;
 
-namespace Infrastructure.API
+namespace IZCommerce.API
 {
     public class WeatherForecast
     {

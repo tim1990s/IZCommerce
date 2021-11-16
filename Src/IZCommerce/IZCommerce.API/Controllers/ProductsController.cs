@@ -23,7 +23,7 @@ namespace IZCommerce.API.Controllers
             _logger = logger;
         }
 
-        public async Task<IActionResult> GetProducts()
+        public async Task<IActionResult> GetProductsAsync()
         {
             var products = await _repository.Product.GetAllProductsAsync(trackChanges: false);
             var productsDto = _mapper.Map<IEnumerable<Product>>(products);     

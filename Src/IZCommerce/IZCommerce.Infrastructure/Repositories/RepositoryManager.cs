@@ -11,6 +11,11 @@ namespace IZCommerce.Infrastructure.Repositories
         private ICategoryRepository _categoryRepository;
         private ISupplierRepository _supplierRepository;
 
+        public RepositoryManager(IZCommerceDBContext iZCommerceDBContext)
+        {
+            _iZCommerceDBContext = iZCommerceDBContext;
+        }
+
         public IProductRepository Product
         {
             get

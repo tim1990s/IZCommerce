@@ -11,7 +11,7 @@ namespace IZCommerce.Common.Extensions
     {
         public static void ConfigurationSqlContext(this IServiceCollection services, IConfiguration configuration)
         {
-            services.AddDbContext<IZCommerceDBContext>(opts => opts.UseSqlServer(configuration.GetConnectionString("sqlConnection"), b=>b.MigrationsAssembly("IZCommerce.API")));
+            services.AddDbContext<IZCommerceDBContext>(opts => opts.UseSqlServer(configuration.GetConnectionString("sqlConnection"), b=>b.MigrationsAssembly("IZCommerce")));
         }
 
         public static void ConfigureRepositoryManager(this IServiceCollection services)

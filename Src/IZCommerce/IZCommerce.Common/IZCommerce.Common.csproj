@@ -15,4 +15,9 @@
     <ProjectReference Include="..\IZCommerce.Core\IZCommerce.Core.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Constants\" />
+    <Folder Include="Utilities\" />
+  </ItemGroup>
+
 </Project>

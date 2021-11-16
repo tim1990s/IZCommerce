@@ -1,8 +1,8 @@
 ﻿using AutoMapper;
 using IZCommerce.Core.Models;
 using IZCommerce.Infrastructure.Repositories.Interfaces;
+using IZCommerce.Logging.Interfaces;
 using Microsoft.AspNetCore.Mvc;
-using System.Collections;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
@@ -14,17 +14,19 @@ namespace IZCommerce.API.Controllers
     {
         private readonly IRepositoryManager _repository;
         private readonly IMapper _mapper;
+        private readonly ILoggerManager _logger;
 
-        public ProductsController(IRepositoryManager repository, IMapper mapper)
+        public ProductsController(IRepositoryManager repository, IMapper mapper, ILoggerManager logger)
         {
             _repository = repository;
             _mapper = mapper;
+            _logger = logger;
         }
 
         public async Task<IActionResult> GetProducts()
         {
             var products = await _repository.Product.GetAllProductsAsync(trackChanges: false);
-            var productsDto = _mapper.Map<IEnumerable<Product>>(products);
+            var productsDto = _mapper.Map<IEnumerable<Product>>(products);     
             return Ok(productsDto);
         }
     }

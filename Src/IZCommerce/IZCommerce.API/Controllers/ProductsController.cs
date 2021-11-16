@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using IZCommerce.Core.Models;
+using IZCommerce.Infrastructure.DTO.Product;
 using IZCommerce.Infrastructure.Repositories.Interfaces;
 using IZCommerce.Logging.Interfaces;
 using Microsoft.AspNetCore.Mvc;
@@ -23,11 +24,26 @@ namespace IZCommerce.API.Controllers
             _logger = logger;
         }
 
+        [HttpGet]
         public async Task<IActionResult> GetProductsAsync()
         {
             var products = await _repository.Product.GetAllProductsAsync(trackChanges: false);
             var productsDto = _mapper.Map<IEnumerable<Product>>(products);     
             return Ok(productsDto);
+        }
+
+        [HttpGet("{productId}", Name ="ProductById")]
+        public async Task<IActionResult> GetProduct(int productId)
+        {
+            var product = await _repository.Product.GetProductAsync(productId, trackChanges: false);
+            if (product == null)
+            {
+                _logger.LogInfo($"Product with ProductId: {productId} doesn't exist in the database.");
+                return NotFound();
+            }
+            
+            var productDto = _mapper.Map<ProductDto>(product);
+            return Ok(productDto);
         }
     }
 }

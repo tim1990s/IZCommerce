@@ -1,4 +1,5 @@
 using IZCommerce.Common.Extensions;
+using IZCommerce.Infrastructure.ActionFilters;
 using IZCommerce.Infrastructure.Extensions;
 using IZCommerce.Logging;
 using IZCommerce.Logging.Interfaces;
@@ -29,6 +30,7 @@ namespace IZCommerce.API
             services.ConfigurationSqlContext(Configuration);
             services.AddAutoMapper(typeof(Startup));
             services.ConfigureRepositoryManager();
+            services.AddScoped<ValidateProductExistsAttribute>();
             services.AddScoped<ILoggerManager, LoggerManager>();
         }
 

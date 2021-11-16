@@ -1,0 +1,50 @@
+{
+	"info": {
+		"_postman_id": "48369e7b-b676-4011-9c96-fa77e32829f3",
+		"name": "IZCommerce",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get All Products",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44321/api/products",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44321",
+					"path": [
+						"api",
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Product By ProductId",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44321/api/products/1007",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44321",
+					"path": [
+						"api",
+						"products",
+						"1007"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

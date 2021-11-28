@@ -13,6 +13,8 @@ namespace IZCommerce.API.Mapper
             CreateMap<Product, ProductDto>();
             CreateMap<Category, CategoryDto>();
             CreateMap<Supplier, SupplierDto>();
+            CreateMap<ProductForCreationDto, Product>();
+            CreateMap<ProductForUpdateDto, Product>().ReverseMap();
         }
     }
 }

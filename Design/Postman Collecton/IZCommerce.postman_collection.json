@@ -26,7 +26,7 @@
 			"response": []
 		},
 		{
-			"name": "Get Product By ProductId",
+			"name": "Get a Product",
 			"request": {
 				"method": "GET",
 				"header": [],
@@ -41,6 +41,138 @@
 						"api",
 						"products",
 						"1007"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create a Single Product",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"SKU\": \"SKU\",\r\n    \"ProductName\":\"ProductName\",\r\n    \"ProductDescription\": \"ProductDescription\",\r\n    \"QuantityPerUnit\": 1,\r\n    \"UnitSize\":\"UnitSize\",\r\n    \"MSRP\":1,\r\n    \"AvailableSize\":\"AvailableSize\",\r\n    \"AvailableColors\":\"AvailableColors\",\r\n    \"SizeID\":1,\r\n    \"ColorID\":1,\r\n    \"Discount\":1,\r\n    \"UnitWeight\":1,\r\n    \"UnitsInStock\":1,\r\n    \"UnitsOnOrder\":1,\r\n    \"ReorderLevel\":1,\r\n    \"ProductAvailable\":true,\r\n    \"DiscountAvailable\":true,\r\n    \"CurrentOrder\":true,\r\n    \"Picture\":\"Picture\",\r\n    \"Ranking\":\"Ranking\",\r\n    \"CategoryId\": 1,\r\n    \"SupplierId\": 1,\r\n    \"Note\":\"Note\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44321/api/products",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44321",
+					"path": [
+						"api",
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update a Product",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"sku\": \"SKU1025\",\r\n    \"productName\": \"ProductName1025\",\r\n    \"productDescription\": \"ProductDescription1025\",\r\n    \"quantityPerUnit\": 1,\r\n    \"unitSize\": \"UnitSize1025\",\r\n    \"msrp\": 1,\r\n    \"availableSize\": \"AvailableSize1025\",\r\n    \"availableColors\": \"AvailableColors1025\",\r\n    \"sizeID\": 11025,\r\n    \"colorID\": 11025,\r\n    \"discount\": 11025,\r\n    \"unitWeight\": 11025,\r\n    \"unitsInStock\": 11025,\r\n    \"unitsOnOrder\": 11025,\r\n    \"reorderLevel\": 11025,\r\n    \"productAvailable\": true,\r\n    \"discountAvailable\": true,\r\n    \"currentOrder\": true,\r\n    \"picture\": \"Picture1025\",\r\n    \"ranking\": \"Ranking1025\",\r\n    \"note\": \"Note1025\",\r\n    \"categoryId\": 1,\r\n    \"supplierId\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44321/api/products/1025",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44321",
+					"path": [
+						"api",
+						"products",
+						"1025"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete a Product",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44321/api/products/1024",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44321",
+					"path": [
+						"api",
+						"products",
+						"1024"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get a List Of Products",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44321/api/products/collection/1006,1007",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44321",
+					"path": [
+						"api",
+						"products",
+						"collection",
+						"1006,1007"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create a List of Product",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    {\r\n    \"SKU\": \"SKU111\",\r\n    \"ProductName\":\"ProductName\",\r\n    \"ProductDescription\": \"ProductDescription\",\r\n    \"QuantityPerUnit\": 1,\r\n    \"UnitSize\":\"UnitSize\",\r\n    \"MSRP\":1,\r\n    \"AvailableSize\":\"AvailableSize\",\r\n    \"AvailableColors\":\"AvailableColors\",\r\n    \"SizeID\":1,\r\n    \"ColorID\":1,\r\n    \"Discount\":1,\r\n    \"UnitWeight\":1,\r\n    \"UnitsInStock\":1,\r\n    \"UnitsOnOrder\":1,\r\n    \"ReorderLevel\":1,\r\n    \"ProductAvailable\":true,\r\n    \"DiscountAvailable\":true,\r\n    \"CurrentOrder\":true,\r\n    \"Picture\":\"Picture\",\r\n    \"Ranking\":\"Ranking\",\r\n    \"CategoryId\": 1,\r\n    \"SupplierId\": 1,\r\n    \"Note\":\"Note\"\r\n},\r\n{\r\n    \"SKU\": \"SKU222\",\r\n    \"ProductName\":\"ProductName\",\r\n    \"ProductDescription\": \"ProductDescription\",\r\n    \"QuantityPerUnit\": 1,\r\n    \"UnitSize\":\"UnitSize\",\r\n    \"MSRP\":1,\r\n    \"AvailableSize\":\"AvailableSize\",\r\n    \"AvailableColors\":\"AvailableColors\",\r\n    \"SizeID\":1,\r\n    \"ColorID\":1,\r\n    \"Discount\":1,\r\n    \"UnitWeight\":1,\r\n    \"UnitsInStock\":1,\r\n    \"UnitsOnOrder\":1,\r\n    \"ReorderLevel\":1,\r\n    \"ProductAvailable\":true,\r\n    \"DiscountAvailable\":true,\r\n    \"CurrentOrder\":true,\r\n    \"Picture\":\"Picture\",\r\n    \"Ranking\":\"Ranking\",\r\n    \"CategoryId\": 1,\r\n    \"SupplierId\": 1,\r\n    \"Note\":\"Note\"\r\n}\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44321/api/products/collection",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44321",
+					"path": [
+						"api",
+						"products",
+						"collection"
 					]
 				}
 			},

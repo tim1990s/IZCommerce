@@ -1,4 +1,6 @@
-﻿namespace IZCommerce.Infrastructure.Repositories.Interfaces
+﻿using System.Threading.Tasks;
+
+namespace IZCommerce.Infrastructure.Repositories.Interfaces
 {
     public interface IRepositoryManager
     {
@@ -7,5 +9,7 @@
         ICategoryRepository Category { get; }
 
         ISupplierRepository Supplier { get; }
+
+        Task SaveAsync();
     }
 }

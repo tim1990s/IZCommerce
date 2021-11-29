@@ -62,12 +62,10 @@ namespace IZCommerce.Core.Models
 
         [ForeignKey(nameof(Supplier))]
         public int SupplierId { get; set; }
-        
         public Supplier Supplier { get; set; }
 
         [ForeignKey(nameof(Category))]
         public int CategoryId { get; set; }
-        
         public Category Category { get; set; }
     }
 }

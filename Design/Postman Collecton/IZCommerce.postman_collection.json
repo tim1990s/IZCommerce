@@ -360,6 +360,184 @@
 					"response": []
 				}
 			]
+		},
+		{
+			"name": "Supplier",
+			"item": [
+				{
+					"name": "Get All Suppliers",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44321/api/suppliers",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44321",
+							"path": [
+								"api",
+								"suppliers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get a Supplier",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44321/api/suppliers/1",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44321",
+							"path": [
+								"api",
+								"suppliers",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create a Supplier",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"CompanyName\": \"CompanyName\",\r\n    \"ContactFName\": \"ContactFName\",\r\n    \"ContactLName\": \"ContactLName\",\r\n    \"ContactTitle\": \"ContactTitle\",\r\n    \"Address1\": \"Address1\",\r\n    \"Address2\": \"Address2\",\r\n    \"City\": \"City\",\r\n    \"State\":\"State\",\r\n    \"PostalCode\": \"PostalCode\",\r\n    \"Country\": \"Country\",\r\n    \"Phone\": \"Phone\",\r\n    \"Fax\": \"Fax\",\r\n    \"Email\": \"Email\",\r\n    \"WebSite\": \"WebSite\",\r\n    \"PaymentMethods\":\"PaymentMethods\",\r\n    \"DiscountType\": \"DiscountType\",\r\n    \"DiscountRate\": 10,\r\n    \"TypeGoods\": \"TypeGoods\",\r\n    \"DiscountAvailable\": true,\r\n    \"CurrentOrder\": true,\r\n    \"CustomerID\": \"CustomerID\",\r\n    \"SizeURL\": \"SizeURL\",\r\n    \"Logo\": \"Logo\",\r\n    \"Ranking\": 1,\r\n    \"Note\": \"Note\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44321/api/suppliers",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44321",
+							"path": [
+								"api",
+								"suppliers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update a Supplier",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"CompanyName\": \"CompanyName22\",\r\n    \"ContactFName\": \"ContactFName22\",\r\n    \"ContactLName\": \"ContactLName22\",\r\n    \"ContactTitle\": \"ContactTitle22\",\r\n    \"Address1\": \"Address122\",\r\n    \"Address2\": \"Address222\",\r\n    \"City\": \"City22\",\r\n    \"State\":\"State22\",\r\n    \"PostalCode\": \"PostalCode\",\r\n    \"Country\": \"Country\",\r\n    \"Phone\": \"Phone\",\r\n    \"Fax\": \"Fax\",\r\n    \"Email\": \"Email\",\r\n    \"WebSite\": \"WebSite\",\r\n    \"PaymentMethods\":\"PaymentMethods\",\r\n    \"DiscountType\": \"DiscountType\",\r\n    \"DiscountRate\": 10,\r\n    \"TypeGoods\": \"TypeGoods\",\r\n    \"DiscountAvailable\": true,\r\n    \"CurrentOrder\": true,\r\n    \"CustomerID\": \"CustomerID\",\r\n    \"SizeURL\": \"SizeURL\",\r\n    \"Logo\": \"Logo\",\r\n    \"Ranking\": 1,\r\n    \"Note\": \"Note\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44321/api/suppliers/7",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44321",
+							"path": [
+								"api",
+								"suppliers",
+								"7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete a Supplier",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44321/api/suppliers/7",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44321",
+							"path": [
+								"api",
+								"suppliers",
+								"7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get a List of Suppliers",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44321/api/suppliers/collection/1,5,6",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44321",
+							"path": [
+								"api",
+								"suppliers",
+								"collection",
+								"1,5,6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create a List of Suppliers",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n    {\r\n    \"CompanyName\": \"CompanyName33\",\r\n    \"ContactFName\": \"ContactFName33\",\r\n    \"ContactLName\": \"ContactLName33\",\r\n    \"ContactTitle\": \"ContactTitle33\",\r\n    \"Address1\": \"Address1\",\r\n    \"Address2\": \"Address2\",\r\n    \"City\": \"City\",\r\n    \"State\":\"State\",\r\n    \"PostalCode\": \"PostalCode\",\r\n    \"Country\": \"Country\",\r\n    \"Phone\": \"Phone\",\r\n    \"Fax\": \"Fax\",\r\n    \"Email\": \"Email\",\r\n    \"WebSite\": \"WebSite\",\r\n    \"PaymentMethods\":\"PaymentMethods\",\r\n    \"DiscountType\": \"DiscountType\",\r\n    \"DiscountRate\": 10,\r\n    \"TypeGoods\": \"TypeGoods\",\r\n    \"DiscountAvailable\": true,\r\n    \"CurrentOrder\": true,\r\n    \"CustomerID\": \"CustomerID\",\r\n    \"SizeURL\": \"SizeURL\",\r\n    \"Logo\": \"Logo\",\r\n    \"Ranking\": 1,\r\n    \"Note\": \"Note\"\r\n\r\n},\r\n\r\n    {\r\n    \"CompanyName\": \"CompanyName44\",\r\n    \"ContactFName\": \"ContactFName44\",\r\n    \"ContactLName\": \"ContactLName44\",\r\n    \"ContactTitle\": \"ContactTitle44\",\r\n    \"Address1\": \"Address1\",\r\n    \"Address2\": \"Address2\",\r\n    \"City\": \"City\",\r\n    \"State\":\"State\",\r\n    \"PostalCode\": \"PostalCode\",\r\n    \"Country\": \"Country\",\r\n    \"Phone\": \"Phone\",\r\n    \"Fax\": \"Fax\",\r\n    \"Email\": \"Email\",\r\n    \"WebSite\": \"WebSite\",\r\n    \"PaymentMethods\":\"PaymentMethods\",\r\n    \"DiscountType\": \"DiscountType\",\r\n    \"DiscountRate\": 10,\r\n    \"TypeGoods\": \"TypeGoods\",\r\n    \"DiscountAvailable\": true,\r\n    \"CurrentOrder\": true,\r\n    \"CustomerID\": \"CustomerID\",\r\n    \"SizeURL\": \"SizeURL\",\r\n    \"Logo\": \"Logo\",\r\n    \"Ranking\": 1,\r\n    \"Note\": \"Note\"\r\n\r\n}\r\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44321/api/suppliers/collection",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44321",
+							"path": [
+								"api",
+								"suppliers",
+								"collection"
+							]
+						}
+					},
+					"response": []
+				}
+			]
 		}
 	]
 }

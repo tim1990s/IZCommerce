@@ -49,7 +49,7 @@ namespace IZCommerce.API.Controllers
         }
 
         [HttpPost(Name = "CreateProduct")]
-        public async Task<IActionResult> CreateCompany([FromBody] ProductForCreationDto product)
+        public async Task<IActionResult> CreateProduct([FromBody] ProductForCreationDto product)
         {
             var productEntity = _mapper.Map<Product>(product);
             _repository.Product.CreateProduct(productEntity);

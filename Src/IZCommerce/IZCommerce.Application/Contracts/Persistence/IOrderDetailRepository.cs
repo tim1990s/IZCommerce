@@ -2,7 +2,7 @@
 
 namespace IZCommerce.Application.Contracts.Persistence
 {
-    public interface ICategoryRepository : IAsyncRepository<OrderDetail>
+    public interface IOrderDetailRepository : IAsyncRepository<OrderDetail>
     {
     }
 }

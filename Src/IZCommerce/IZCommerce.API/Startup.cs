@@ -28,6 +28,7 @@ namespace IZCommerce.API
         {
             services.AddControllers();
             services.ConfigurationSqlContext(Configuration);
+            services.ConfigurationIdentityDbContext(Configuration);
             services.AddAutoMapper(typeof(Startup));
             services.ConfigureRepositoryManager();
             services.AddScoped<ValidateProductExistsAttribute>();

@@ -16,11 +16,6 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<Folder Include="Contracts\Infrastructure\" />
-		<Folder Include="Models\" />
-	</ItemGroup>
-
-	<ItemGroup>
 	  <ProjectReference Include="..\IZCommerce.Domain\IZCommerce.Domain.csproj" />
 	</ItemGroup>
 
